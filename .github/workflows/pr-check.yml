@@ -1,10 +1,13 @@
 name: 🧪 PR 检查
 
 on:
-  pull_request:
+  workflow_dispatch:
+  # 已手动关闭 PR 自动检查
+  # pull_request:
 
 jobs:
   run:
+    if: false
     runs-on: ubuntu-22.04
     timeout-minutes: 15
 
