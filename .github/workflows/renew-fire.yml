@@ -2,9 +2,10 @@ name: 🚀 续一次火
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "10 0,2,4 * * *"
-      timezone: "Asia/Shanghai"
+  # 已手动关闭定时自动续火花任务
+  # schedule:
+  #   - cron: "10 0,2,4 * * *"
+  #     timezone: "Asia/Shanghai"
 
 permissions:
   actions: read
@@ -12,7 +13,7 @@ permissions:
 
 jobs:
   check:
-    if: ${{ github.event_name == 'schedule' }}
+    if: false
     runs-on: ubuntu-22.04
     outputs:
       should_run: ${{ steps.daily-check.outputs.should_run }}
@@ -55,7 +56,7 @@ jobs:
 
   run:
     needs: check
-    if: ${{ always() && (github.event_name != 'schedule' || needs.check.outputs.should_run == 'true') }}
+    if: false
     runs-on: ubuntu-22.04
     container:
       image: mcr.microsoft.com/playwright:v1.61.0-jammy
