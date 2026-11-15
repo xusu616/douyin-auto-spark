@@ -1,3 +1,5 @@
+> 📦 **Release 下载提示**：请前往对应的 GitLab 仓库查看或下载 Release（GitHub 端暂不重复上传）👉 [https://gitlab.com/xusu616/douyin-auto-spark/-/releases](https://gitlab.com/xusu616/douyin-auto-spark/-/releases) （[GitLab 仓库主页](https://gitlab.com/xusu616/douyin-auto-spark)）
+
 <h1 align="center">🔥 Douyin Auto Spark</h1>
 
 <p align="center">
